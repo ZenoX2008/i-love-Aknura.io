@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I LOVE YOU AKNURA</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .love-message {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: bold;
+      color: #d63384;
+      text-shadow: 
+        -2px -2px 0 rgba(0,0,0,0.2),  
+        2px -2px 0 rgba(0,0,0,0.2),
+        -2px 2px 0 rgba(0,0,0,0.2),
+        2px 2px 0 rgba(0,0,0,0.2);
+      animation: textEffect 3s infinite;
+    }
+
+    @keyframes textEffect {
+      0% {
+        transform: scale(1);
+        color: #d63384;
+      }
+      50% {
+        transform: scale(1.1);
+        color: #ff1493;
+      }
+      100% {
+        transform: scale(1);
+        color: #d63384;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .love-message {
+        font-size: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="love-message">I LOVE YOU AKNURA</div>
+</body>
+</html>
